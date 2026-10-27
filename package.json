@@ -1,0 +1,31 @@
+{
+  "name": "aws-saa-prep",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AWS Certified Solutions Architect - Associate (SAA-C03) preparation suite: syllabus, per-service study guides, practice questions and a progress tracker.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "npm run validate && npm run diagrams",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "validate": "node scripts/validate-data.mjs",
+    "diagrams": "node scripts/generate-drawio.mjs",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^12.42.2",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "oxlint": "^1.71.0",
+    "vite": "^8.1.1"
+  }
+}

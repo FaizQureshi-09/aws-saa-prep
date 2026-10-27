@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#232f3e" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('saa-prep-theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (error) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <meta
+      name="description"
+      content="AWS Certified Solutions Architect - Associate (SAA-C03) preparation suite: official syllabus, a 30-day study plan, per-service study guides with diagrams, practice questions and a progress tracker."
+    />
+    <meta property="og:title" content="AWS SAA-C03 Prep Suite" />
+    <meta
+      property="og:description"
+      content="Syllabus, 30-day plan, service-by-service study guides, practice questions and progress tracker for the AWS Solutions Architect Associate exam."
+    />
+    <meta property="og:type" content="website" />
+    <title>AWS SAA-C03 Prep Suite</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

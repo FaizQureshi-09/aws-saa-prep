@@ -1,0 +1,38 @@
+.page-header {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255, 153, 0, 0.18), transparent 45%),
+    var(--color-chrome-bg);
+  color: var(--color-chrome-text);
+  padding-block: clamp(2.25rem, 5vw, 3.75rem);
+}
+
+.page-header__eyebrow {
+  display: inline-block;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-brand-orange);
+  margin-bottom: var(--space-sm);
+}
+
+.page-header__title {
+  font-size: clamp(1.75rem, 4vw, var(--font-size-4xl));
+  color: #ffffff;
+  max-width: 22ch;
+}
+
+.page-header__description {
+  max-width: 70ch;
+  margin-top: var(--space-md);
+  font-size: var(--font-size-lg);
+  color: var(--color-chrome-muted);
+}
+
+.page-header__extra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}

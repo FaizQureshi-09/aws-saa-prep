@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#232f3e"/>
+  <path d="M14 38c12 8 24 8 36 0" fill="none" stroke="#ff9900" stroke-width="4" stroke-linecap="round"/>
+  <path d="M46 34l6 3-4 6" fill="none" stroke="#ff9900" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">SAA</text>
+</svg>

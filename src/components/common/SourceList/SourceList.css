@@ -1,0 +1,24 @@
+.source-list {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.source-list__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-text-link);
+  font-size: var(--font-size-sm);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-word;
+}
+
+.source-list__link:hover {
+  color: var(--color-accent-primary);
+}
+
+.source-list__icon {
+  flex: none;
+  font-size: 0.7rem;
+}

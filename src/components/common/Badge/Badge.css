@@ -1,0 +1,52 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.65rem;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border: 1px solid currentColor;
+  background-color: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.badge--tier-critical {
+  color: var(--color-tier-critical);
+}
+
+.badge--tier-high {
+  color: var(--color-tier-high);
+}
+
+.badge--tier-medium {
+  color: var(--color-tier-medium);
+}
+
+.badge--tier-low {
+  color: var(--color-tier-low);
+}
+
+.badge--domain-1 {
+  color: var(--color-domain-1);
+}
+
+.badge--domain-2 {
+  color: var(--color-domain-2);
+}
+
+.badge--domain-3 {
+  color: var(--color-domain-3);
+}
+
+.badge--domain-4 {
+  color: var(--color-domain-4);
+}
+
+.badge--source-official {
+  color: var(--color-success);
+}
+
+.badge--source-mock {
+  color: var(--color-info);
+}
